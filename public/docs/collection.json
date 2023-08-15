@@ -1,0 +1,622 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/localhost"
+        }
+    ],
+    "info": {
+        "name": "ChatApp",
+        "_postman_id": "7aa4828a-8f72-44bf-b7f0-ca6c463a596e",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "GET api\/v1\/message",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/message",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/message"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"to\":24,\"page\":3}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "SESSION=oAQuzgUqfbo5GovWn2KqEzWbfMrzIg7zlq6EuBs7; expires=Mon, 14 Aug 2023 17:17:27 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/v1\/message",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/message",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/message"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"body\":\"gxuhfumxnwc\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/message\/{uuid}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/message\/:uuid",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/message\/:uuid",
+                            "variable": [
+                                {
+                                    "id": "uuid",
+                                    "key": "uuid",
+                                    "value": "0175cc8f-2836-4f18-a45d-b055daac5ffd",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "SESSION=t9H3QShFQD30mX0DguZHBRKWsY5VUqAdDfo7gOJZ; expires=Mon, 14 Aug 2023 17:17:27 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PUT api\/v1\/message\/{uuid}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/message\/:uuid",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/message\/:uuid",
+                            "variable": [
+                                {
+                                    "id": "uuid",
+                                    "key": "uuid",
+                                    "value": "0175cc8f-2836-4f18-a45d-b055daac5ffd",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"body\":\"zjwvvdirboncxmjw\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/v1\/message\/{uuid}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/message\/:uuid",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/message\/:uuid",
+                            "variable": [
+                                {
+                                    "id": "uuid",
+                                    "key": "uuid",
+                                    "value": "0175cc8f-2836-4f18-a45d-b055daac5ffd",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/phone",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/phone",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/phone"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"to\":11,\"page\":81}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "SESSION=J0hRab9eT20ZSd9VJAdeaxLHS26RyONaNVZYa4Wf; expires=Mon, 14 Aug 2023 17:17:27 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/v1\/phone",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/phone",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/phone"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"phone\":\"omjbsdvxmi\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/phone\/{uuid}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/phone\/:uuid",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/phone\/:uuid",
+                            "variable": [
+                                {
+                                    "id": "uuid",
+                                    "key": "uuid",
+                                    "value": "0175cc8f-2836-4f18-a45d-b055daac5ffd",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "SESSION=7wHB08wGWq1OW81lZn7uiwuNnisBvAYgWBfBWvBi; expires=Mon, 14 Aug 2023 17:17:27 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PUT api\/v1\/phone\/{uuid}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/phone\/:uuid",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/phone\/:uuid",
+                            "variable": [
+                                {
+                                    "id": "uuid",
+                                    "key": "uuid",
+                                    "value": "0175cc8f-2836-4f18-a45d-b055daac5ffd",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"phone\":\"yxkprqfmjeiuuvo\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/v1\/phone\/{uuid}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/phone\/:uuid",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/phone\/:uuid",
+                            "variable": [
+                                {
+                                    "id": "uuid",
+                                    "key": "uuid",
+                                    "value": "0175cc8f-2836-4f18-a45d-b055daac5ffd",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET oauth\/v1\/login",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "oauth\/v1\/login",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/oauth\/v1\/login"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "SESSION=a9Xbz1fjwBkB8BGn7AX507rfXyoyQbBLxpEedJ6d; expires=Mon, 14 Aug 2023 17:17:27 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "[]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET oauth\/v1\/check",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "oauth\/v1\/check",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/oauth\/v1\/check"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "SESSION=vVMy66zHleG4QuFDaOCczicrSvYClr0z2ahdRDKy; expires=Mon, 14 Aug 2023 17:17:27 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET oauth\/v1\/logout",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "oauth\/v1\/logout",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/oauth\/v1\/logout"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "SESSION=Qrpc811ysOfID14UrslFnMn6o77FZyenMbEHsUX0; expires=Mon, 14 Aug 2023 17:17:27 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

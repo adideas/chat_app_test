@@ -1,0 +1,85 @@
+version: '3'
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+    cache:
+        driver: local
+
+services:
+
+  nginx:
+    image: nginx:stable-alpine
+    container_name: ${APP_NAME}-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./:/var/www/html
+      - ./.docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./.docker/nginx/log/error.log:/var/log/nginx/error.log
+      - ./.docker/nginx/log/access.log:/var/log/nginx/access.log
+    depends_on:
+      - php
+      - redis
+      - mysql
+    networks:
+      - app-network
+
+  mysql:
+    image: mysql:latest
+    container_name: ${APP_NAME}-mysql
+    restart: on-failure
+    tty: true
+    ports:
+      - "4306:3306"
+    volumes:
+      - ./.docker/mysql/data:/var/lib/mysql
+      - ./.docker/mysql/dump:/var/lib/dump
+      - ./.docker/mysql/my.cnf:/etc/mysql/my.cnf
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ALLOW_EMPTY_PASSWORD: 0
+      MYSQL_RANDOM_ROOT_PASSWORD: 0
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    networks:
+      - app-network
+
+  redis:
+      image: redis:latest
+      container_name: ${APP_NAME}-redis
+      restart: on-failure
+      ports:
+          - '6379:6379'
+      volumes:
+          - cache:/data
+      networks:
+          - app-network
+
+  php:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    image: php:8.2
+    container_name: ${APP_NAME}-php
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: php
+      SERVICE_TAGS: dev
+    links:
+      - mysql
+      - redis
+    volumes:
+      - ./:/var/www/html
+      - ./.docker/supervisor/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf
+      - ./.docker/supervisor/supervisord.log:/var/log/supervisor/supervisord.log
+    ports:
+      - "9000:9000"
+    networks:
+      - app-network
