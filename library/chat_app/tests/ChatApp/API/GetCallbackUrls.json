@@ -1,0 +1,14 @@
+{
+    "success": true,
+    "data": [
+        {
+            "licenseId": 37233,
+            "messengerType": "grWhatsApp",
+            "events": [
+                "message",
+                "messageStatus"
+            ],
+            "url": "https://webhook.site/f411787a-1def-4ec7-85b0-bba061893d37"
+        }
+    ]
+}

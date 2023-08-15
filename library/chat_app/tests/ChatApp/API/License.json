@@ -1,0 +1,91 @@
+{
+    "success": true,
+    "data": [
+        {
+            "licenseId": 37233,
+            "licenseTo": 1692122395,
+            "licenseName": null,
+            "meOwner": true,
+            "status": {
+                "id": 4,
+                "code": "paid"
+            },
+            "messenger": [
+                {
+                    "type": "grWhatsApp",
+                    "name": "[WEB] WhatsApp"
+                }
+            ],
+            "app": [
+                {
+                    "type": "bitrix",
+                    "name": "Bitrix24"
+                },
+                {
+                    "type": "webchat",
+                    "name": "Web Chat"
+                },
+                {
+                    "type": "mobileapp",
+                    "name": "Mobile App"
+                },
+                {
+                    "type": "amo",
+                    "name": "AmoCRM"
+                },
+                {
+                    "type": "yclients",
+                    "name": "Yclients"
+                },
+                {
+                    "type": "altegio",
+                    "name": "Altegio"
+                }
+            ],
+            "access": []
+        },
+        {
+            "licenseId": 37236,
+            "licenseTo": 1692122399,
+            "licenseName": null,
+            "meOwner": true,
+            "status": {
+                "id": 4,
+                "code": "paid"
+            },
+            "messenger": [
+                {
+                    "type": "grWhatsApp",
+                    "name": "[WEB] WhatsApp"
+                }
+            ],
+            "app": [
+                {
+                    "type": "bitrix",
+                    "name": "Bitrix24"
+                },
+                {
+                    "type": "webchat",
+                    "name": "Web Chat"
+                },
+                {
+                    "type": "mobileapp",
+                    "name": "Mobile App"
+                },
+                {
+                    "type": "amo",
+                    "name": "AmoCRM"
+                },
+                {
+                    "type": "yclients",
+                    "name": "Yclients"
+                },
+                {
+                    "type": "altegio",
+                    "name": "Altegio"
+                }
+            ],
+            "access": []
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "name": "adideas/chat_app_library",
+    "description": "",
+    "authors": [
+        {
+            "name": "Alexey Vlasov",
+            "email": "adideas@mail.ru"
+        }
+    ],
+    "keywords": [],
+    "homepage": "https://github.com/adideas/chat_app_library",
+    "version": "0.0.0",
+    "license": "PERSONAL",
+    "require": {
+        "php": "^8.1",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.7",
+        "illuminate/http": "*",
+        "illuminate/notifications": "*",
+        "laravel/framework": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "preferred-install": "dist"
+    },
+    "autoload": {
+        "psr-4": {
+            "Adideas\\ChatApp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Adideas\\ChatApp\\Providers\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "support": {
+        "issues": "https://github.com/adideas/chat_app_library/issues",
+        "source": "https://github.com/adideas/chat_app_library"
+    }
+}

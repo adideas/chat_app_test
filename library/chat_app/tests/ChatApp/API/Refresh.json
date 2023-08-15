@@ -1,0 +1,10 @@
+{
+    "success": true,
+    "data": {
+        "cabinetUserId": 14545,
+        "accessToken": "$2y$10$E47dCl4tDArpVtbii5Al3OPJd3zy6Ey16ZzfhvlqFZFIhhEl1F8Ui",
+        "accessTokenEndTime": 1625915202,
+        "refreshToken": "$2y$10$s7dE./HS7/Dc27U8HIzXvO6ksWjDISokpRukOC2aZfXJT9t9YyQPC",
+        "refreshTokenEndTime": 1626001602
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "data": [
+        {
+            "id": "BAE5DD2EFC88B3C6",
+            "type": "sent",
+            "time": 1692006733,
+            "chat": {
+                "id": "70000000000@c.us",
+                "hash": null,
+                "type": "private",
+                "phone": "70000000000",
+                "username": null,
+                "email": null
+            },
+            "fromApp": {
+                "id": "app_111_1",
+                "tracking": null
+            },
+            "error": null
+        },
+        {
+            "id": "BAE50969AD3BEA0F",
+            "type": "viewed",
+            "time": 1692009881,
+            "chat": {
+                "id": "70000000000@c.us",
+                "hash": null,
+                "type": "private",
+                "phone": "70000000000",
+                "username": null,
+                "email": null
+            },
+            "fromApp": {
+                "id": "app_111_1",
+                "tracking": null
+            },
+            "error": null
+        },
+        {
+            "id": "BAE50969AD3BEA0F",
+            "type": "delivered",
+            "time": 1692009828,
+            "chat": {
+                "id": "70000000000@c.us",
+                "hash": null,
+                "type": "private",
+                "phone": "70000000000",
+                "username": null,
+                "email": null
+            },
+            "fromApp": {
+                "id": "app_111_1",
+                "tracking": null
+            },
+            "error": null
+        }
+    ],
+    "meta": {
+        "type": "messageStatus",
+        "licenseId": 123,
+        "messengerType": "grWhatsApp"
+    }
+}
